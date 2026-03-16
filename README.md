@@ -24,7 +24,7 @@ We took OpenCode (MIT license, 120k+ stars), forked it, hardcoded Pepper as the 
 
 ```bash
 # Clone with submodule
-git clone --recursive https://github.com/YOUR_USERNAME/chipotlai-max.git
+git clone --recursive https://github.com/cyberpapiii/chipotlai-max.git
 cd chipotlai-max
 
 # Install dependencies
@@ -69,6 +69,31 @@ Chipotlai Max comes pre-configured with:
 - [OpenCode](https://github.com/anomalyco/opencode) — the real deal, MIT licensed
 - [@Gonzih](https://github.com/Gonzih) — reverse-engineered the Pepper proxy
 - Chipotle Mexican Grill — for accidentally providing free AI compute to the internet
+
+## Contributing — Help Us Add More Providers!
+
+Chipotle patched Pepper, but every major retailer has a customer support chatbot. **We need your help reverse-engineering more providers.**
+
+### Wanted: New Provider Proxies
+
+| Brand | Bot | Status |
+|-------|-----|--------|
+| Chipotle | Pepper (Amelia) | Patched (March 2026) |
+| Home Depot | Virtual Assistant | Needs research |
+| Lowe's | Support Chat | Needs research |
+| Target | Help Bot | Needs research |
+| Starbucks | Virtual Barista | Needs research |
+| Walmart | Chat Assistant | Needs research |
+| McDonald's | Support Bot | Needs research |
+
+### How to Contribute
+
+1. **Find a corporate chatbot** that can answer general questions
+2. **Reverse-engineer the API** (WebSocket, REST, etc.)
+3. **Build an OpenAI-compatible proxy** (follow [chipotle-llm-provider](https://github.com/Gonzih/chipotle-llm-provider) as a template)
+4. **Submit a PR** adding your provider to `packages/opencode/src/provider/`
+
+See the [chipotle-llm-provider source](chipotle-llm-provider/src/) for the proxy pattern: Express server + WebSocket client + OpenAI-compatible `/v1/chat/completions` endpoint.
 
 ## License
 
