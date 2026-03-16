@@ -1,0 +1,3 @@
+[submodule "chipotle-llm-provider"]
+	path = chipotle-llm-provider
+	url = https://github.com/Gonzih/chipotle-llm-provider.git

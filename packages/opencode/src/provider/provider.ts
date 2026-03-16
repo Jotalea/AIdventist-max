@@ -129,6 +129,11 @@ export namespace Provider {
     "@gitlab/gitlab-ai-provider": createGitLab,
     // @ts-ignore (TODO: kill this code so we dont have to maintain it)
     "@ai-sdk/github-copilot": createGitHubCopilotOpenAICompatible,
+    "chipotle-pepper": () => createOpenAICompatible({
+      name: "chipotle-pepper",
+      baseURL: "http://localhost:3000/v1",
+      apiKey: "burrito-2026",
+    }),
   }
 
   type CustomModelLoader = (sdk: any, modelID: string, options?: Record<string, any>) => Promise<any>
@@ -515,6 +520,14 @@ export namespace Provider {
             "HTTP-Referer": "https://opencode.ai/",
             "X-Title": "opencode",
           },
+        },
+      }
+    },
+    async "chipotle-pepper"() {
+      return {
+        autoload: true,
+        options: {
+          apiKey: "burrito-2026",
         },
       }
     },
@@ -1071,6 +1084,46 @@ export namespace Provider {
       if (provider.name) partial.name = provider.name
       if (provider.options) partial.options = provider.options
       mergeProvider(providerID, partial)
+    }
+
+    // Inject Chipotle Pepper provider with pepper-1 model
+    if (!disabled.has(ProviderID.chipotlePepper)) {
+      providers["chipotle-pepper"] = {
+        id: ProviderID.make("chipotle-pepper"),
+        name: "Chipotle Pepper",
+        source: "custom",
+        env: [],
+        options: {},
+        models: {
+          "pepper-1": {
+            id: ModelID.make("pepper-1"),
+            providerID: ProviderID.make("chipotle-pepper"),
+            name: "Pepper 1",
+            family: "",
+            api: {
+              id: "pepper-1",
+              url: "http://localhost:3000/v1",
+              npm: "chipotle-pepper",
+            },
+            status: "active",
+            capabilities: {
+              temperature: false,
+              reasoning: false,
+              attachment: false,
+              toolcall: true,
+              input: { text: true, audio: false, image: false, video: false, pdf: false },
+              output: { text: true, audio: false, image: false, video: false, pdf: false },
+              interleaved: false,
+            },
+            cost: { input: 0, output: 0, cache: { read: 0, write: 0 } },
+            limit: { context: 8192, output: 4096 },
+            options: {},
+            headers: {},
+            release_date: "",
+            variants: {},
+          },
+        },
+      }
     }
 
     for (const [id, provider] of Object.entries(providers)) {

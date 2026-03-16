@@ -90,8 +90,8 @@
   --text-mix-blend-mode: multiply;
 
   /* OC-2 fallback variables (light) */
-  --background-base: #f8f8f8;
-  --background-weak: #f3f3f3;
+  --background-base: #FFF8F5;
+  --background-weak: #FFF1EB;
   --background-strong: #fcfcfc;
   --background-stronger: #fcfcfc;
   --surface-base: rgba(0, 0, 0, 0.031);
@@ -119,10 +119,10 @@
   --surface-strong: #ffffff;
   --surface-stronger-non-alpha: var(--surface-raised-stronger-non-alpha);
   --surface-raised-stronger-non-alpha: #ffffff;
-  --surface-brand-base: #dcde8d;
-  --surface-brand-hover: #d0d283;
-  --surface-interactive-base: #ecf3ff;
-  --surface-interactive-hover: #e0eaff;
+  --surface-brand-base: #AC2318;
+  --surface-brand-hover: #8C1C12;
+  --surface-interactive-base: #FFF1EB;
+  --surface-interactive-hover: #FFE4D9;
   --surface-interactive-weak: #f7faff;
   --surface-interactive-weak-hover: #ecf3ff;
   --surface-success-base: #dbfed7;
@@ -160,15 +160,15 @@
   --input-selected: #e0eaff;
   --input-focus: #fcfdff;
   --input-disabled: #ededed;
-  --text-base: #6f6f6f;
+  --text-base: #6B3A25;
   --text-weak: #8f8f8f;
   --text-weaker: #c7c7c7;
-  --text-strong: #171717;
+  --text-strong: #451400;
   --text-invert-base: #f8f8f8;
   --text-invert-weak: #f3f3f3;
   --text-invert-weaker: #ededed;
   --text-invert-strong: #fcfcfc;
-  --text-interactive-base: #034cff;
+  --text-interactive-base: #AC2318;
   --text-on-brand-base: rgba(0, 0, 0, 0.574);
   --text-on-interactive-base: #fcfcfc;
   --text-on-interactive-weak: rgba(0, 0, 0, 0.574);
@@ -191,7 +191,7 @@
   --text-on-brand-weak: rgba(0, 0, 0, 0.453);
   --text-on-brand-weaker: rgba(0, 0, 0, 0.232);
   --text-on-brand-strong: rgba(0, 0, 0, 0.915);
-  --button-primary-base: #171717;
+  --button-primary-base: #AC2318;
   --button-secondary-base: #fcfcfc;
   --button-secondary-hover: #f8f8f8;
   --button-ghost-hover: rgba(0, 0, 0, 0.031);
@@ -258,8 +258,8 @@
   --icon-strong-selected: #020202;
   --icon-strong-disabled: #c7c7c7;
   --icon-strong-focus: #020202;
-  --icon-brand-base: #171717;
-  --icon-interactive-base: #034cff;
+  --icon-brand-base: #AC2318;
+  --icon-interactive-base: #AC2318;
   --icon-success-base: #7add71;
   --icon-success-hover: #4cc944;
   --icon-success-active: #078901;
@@ -350,10 +350,10 @@
     --text-mix-blend-mode: plus-lighter;
 
     /* OC-2 fallback variables (dark) */
-    --background-base: #101010;
-    --background-weak: #1e1e1e;
-    --background-strong: #121212;
-    --background-stronger: #151515;
+    --background-base: #1A0A04;
+    --background-weak: #2A1508;
+    --background-strong: #120602;
+    --background-stronger: #150803;
     --surface-base: rgba(255, 255, 255, 0.031);
     --base: rgba(255, 255, 255, 0.034);
     --surface-base-hover: rgba(255, 255, 255, 0.039);
@@ -379,10 +379,10 @@
     --surface-strong: rgba(255, 255, 255, 0.169);
     --surface-stronger-non-alpha: var(--surface-raised-stronger-non-alpha);
     --surface-raised-stronger-non-alpha: #1c1c1c;
-    --surface-brand-base: #fab283;
-    --surface-brand-hover: #eda779;
-    --surface-interactive-base: #091f52;
-    --surface-interactive-hover: #091f52;
+    --surface-brand-base: #AC2318;
+    --surface-brand-hover: #8C1C12;
+    --surface-interactive-base: #2A1508;
+    --surface-interactive-hover: #3A2010;
     --surface-interactive-weak: #0b1730;
     --surface-interactive-weak-hover: #ecf3ff;
     --surface-success-base: #062d04;
@@ -428,7 +428,7 @@
     --text-invert-weak: #707070;
     --text-invert-weaker: #505050;
     --text-invert-strong: #ededed;
-    --text-interactive-base: #9dbefe;
+    --text-interactive-base: #E8856E;
     --text-on-brand-base: rgba(255, 255, 255, 0.603);
     --text-on-interactive-base: #ededed;
     --text-on-interactive-weak: rgba(255, 255, 255, 0.603);
@@ -451,7 +451,7 @@
     --text-on-brand-weak: rgba(255, 255, 255, 0.404);
     --text-on-brand-weaker: rgba(255, 255, 255, 0.266);
     --text-on-brand-strong: rgba(255, 255, 255, 0.928);
-    --button-primary-base: #ededed;
+    --button-primary-base: #E8856E;
     --button-secondary-base: #1c1c1c;
     --button-secondary-hover: rgba(255, 255, 255, 0.039);
     --button-ghost-hover: rgba(255, 255, 255, 0.031);
@@ -518,8 +518,8 @@
     --icon-strong-selected: #fdfcfc;
     --icon-strong-disabled: #3e3e3e;
     --icon-strong-focus: #fdfcfc;
-    --icon-brand-base: #ffffff;
-    --icon-interactive-base: #034cff;
+    --icon-brand-base: #E8856E;
+    --icon-interactive-base: #E8856E;
     --icon-success-base: #12c905;
     --icon-success-hover: #35c02d;
     --icon-success-active: #4de144;
