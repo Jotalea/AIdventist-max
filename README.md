@@ -6,6 +6,8 @@
 
 Not affiliated with Chipotle. They will probably sue us. Worth it.
 
+![Chipotlai Max TUI](docs/chipotlai-screenshot.webp)
+
 ---
 
 ## What Is This?
