@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Chipotlai Max** is a meme fork of [OpenCode](https://github.com/anomalyco/opencode) (MIT, 120k+ stars) that ships Chipotle's "Pepper AI" support bot as the default model via the [chipotle-llm-provider](https://github.com/Gonzih/chipotle-llm-provider) proxy. The full project brief is in `**Chipotlai Max Project Brief**.md`.
+**Chipotlai Max** is a meme fork of [OpenCode](https://github.com/anomalyco/opencode) (MIT, 120k+ stars) that ships Chipotle's "Pepper AI" support bot as the default model via the [chipotle-llm-provider](https://github.com/Gonzih/chipotle-llm-provider) proxy.
 
 ## Build & Run
 

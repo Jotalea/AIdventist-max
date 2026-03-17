@@ -6,6 +6,10 @@ node_modules
 .idea
 .vscode
 .codex
+.letta/
+docs/plans/
+docs/tweet-thread.md
+\*\*Chipotlai Max Project Brief\*\*.md
 *~
 playground
 tmp
